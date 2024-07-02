@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section#profile p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section#profile img {
+    display: block;
+    margin: 0 auto;
+}
+
+section#goals ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section a {
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+section#links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+section#links a:hover,
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 600px;
+    }
+
+    section#profile p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    section#profile p {
+        font-size: 16px;
+    }
+}
