@@ -1,118 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Tech Goals</title>
-  <link rel="stylesheet" href="./app.css">
-<script src="app.js" defer></script>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>My Tech Goals for the Next 2 Years</h1>
-    </header>
-    
-    <section id="profile">
-      <img src="./Assets/fortune.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture"  >
-      <p>Slack Display Name: <span data-testid="slackDisplayName">Omorodion Fortune</span></p>
-      <p>Slack Email: <span data-testid="slackEmail"><a href="">omorodion.fortune@gmail.com</a></span></p>
-      <p>Current Time (UTC): <span data-testid="currentTimeUTC" id="currentTime"></span></p>
-      <p>Current Day: <span data-testid="currentDay" id="currentDay"></span></p>
-    </section>
-    
-    <section id="goals">
-        <h1>Year 1 Goals</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile Card</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="profile">
+        <img
+          class="profile-image"
+          src="./Assets/fortune.jpg"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+        />
+
+        <p class="profile-name">
+          <span data-testid="fullName">Omorodion Fortune Frank</span>
+        </p>
+        <p class="job-title">
+          <span data-testid="jobTitle">Frontend Developer</span>
+        </p>
+
         <p>
-          <strong> Skill Enhancement</strong> 
-            <br>
-            <ol>
-                <li>
-                   Master React Fundamentals:
-<span  class="span">
- Gain a thorough understanding of React's core concepts, including JSX, components, state, and props.
-Complete tutorials and courses focused on React basics.
-Build small projects like a to-do list or a simple blog to practice these concepts.
-Read the official React documentation and stay updated with the latest features and best practices.
-</span>
+          <span data-testid="emailAddress"
+            ><a href="mailto:omorodion.fortune@gmail.com"
+              >omorodion.fortune@gmail.com</a
+            ></span
+          >
+        </p>
 
+        <p class="shortBio">
+          I'm a passionate front-end developer dedicated to creating intuitive
+          and visually appealing web experiences. With a strong foundation in
+          HTML, CSS, JavaScript, and frameworks like React.js and Next.js, I
+          enjoy bringing designs to life with clean, efficient code. I thrive in
+          collaborative environments, constantly learning and adapting to new
+          technologies. My goal is to build seamless, user-friendly applications
+          that enhance digital interactions. Whether it’s optimizing performance
+          or refining UI/UX, I take pride in crafting web solutions that are
+          both functional and engaging.
+        </p>
 
-               </li>
-               <li>Optimize Performance:
-                <span class="span"> Learning and applying techniques to enhance the performance of React applications.
+        <p class="info">
+          Current Time (UTC):
+          <span data-testid="currentTimeUTC" id="currentTime"></span>
+        </p>
+        <p class="info">
+          Current Day: <span data-testid="currentDay" id="currentDay"></span>
+        </p>
+        <p class="info">
+          Location: <span data-testid="currentLocation">Lagos, Nigeria</span>
+        </p>
 
-Study how React’s reconciliation and virtual DOM work.
-Implement memoization using React.memo and hooks like useMemo and useCallback.
-Use performance profiling tools to identify and fix bottlenecks.
-Implement code-splitting and lazy loading using React.lazy and Suspense.
-</span>
-               </li>
-               <li>
-                Next.js: Gain expertise in Next.js for server-side rendering and static site generation.
-           </li>
-           <li>CSS-in-JS: Explore styled-components, Emotion, or other CSS-in-JS libraries for better styling solutions.</li>
-            </ol>
-         <strong>Projects and Contributions</strong>
-         <br>
-        <ol>
-             <li>
-                Personal Projects: Build at least two significant personal projects to apply new skills and technologies.
-            </li>
-            <li>Open Source: Contribute to open source projects to gain experience and visibility in the community.</li>
-        </ol>
-        
-        <strong>Soft Skills and Networking</strong>
-        <br>
-        <ol>
-            <li>
-                Community Involvement: Participate in local or online tech meetups, conferences, and hackathons.
-           </li>
-           <li>Public Speaking: Give talks or presentations at meetups or conferences to improve communication skills.</li>
-           <li> Blogging: Start a blog or contribute to established ones to share knowledge and insights.</li>
-        </ol>
-        </p> 
+        <!-- Social Links -->
+        <div data-testid="socialLink" class="social-links">
+          <a
+            href="https://linkedin.com/in/fortune-omorodion"
+            target="_blank"
+            title="Twitter"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              width="48px"
+              height="48px"
+            >
+              <path
+                fill="#0288D1"
+                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+              />
+              <path
+                fill="#FFF"
+                d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
+              /></svg
+          ></a>
+          <a
+            href="https://github.com/fortzy05"
+            target="_blank"
+            title="LinkedIn"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              width="48px"
+              height="48px"
+            >
+              <path
+                d="M32,10c12.15,0,22,9.85,22,22c0,9.768-6.369,18.045-15.179,20.916c0.002-0.008,0.006-0.021,0.006-0.021	s-1.485-0.696-1.453-1.938c0.035-1.367,0-4.556,0-5.727c0-2.01-1.272-3.434-1.272-3.434s9.977,0.112,9.977-10.533	c0-4.107-2.147-6.245-2.147-6.245s1.128-4.385-0.39-6.245c-1.701-0.184-4.749,1.626-6.05,2.472c0,0-2.062-0.846-5.492-0.846	c-3.43,0-5.492,0.846-5.492,0.846c-1.301-0.846-4.348-2.656-6.05-2.472c-1.518,1.86-0.39,6.245-0.39,6.245s-2.147,2.137-2.147,6.245	c0,10.645,9.977,10.533,9.977,10.533s-1.005,1.136-1.225,2.806c-0.696,0.236-1.721,0.528-2.549,0.528	c-2.165,0-3.812-2.105-4.416-3.078c-0.595-0.96-1.815-1.766-2.953-1.766c-0.749,0-1.115,0.375-1.115,0.803s1.05,0.727,1.743,1.521	c1.461,1.674,1.435,5.438,6.641,5.438c0.565,0,1.719-0.139,2.588-0.256c-0.005,1.185-0.007,2.436,0.012,3.167	c0.031,1.242-1.453,1.938-1.453,1.938s0.004,0.012,0.006,0.021C16.369,50.045,10,41.768,10,32C10,19.85,19.85,10,32,10z"
+              />
+            </svg>
+            ></a
+          >
+        </div>
+      </section>
+    </div>
 
-        <h1>Year 2 Goals</h1>
-<p>
-<strong>Leadership and Mentorship</strong>
-<ol>
-    <li>
-        Mentoring: Start mentoring junior developers or contributing to educational platforms.
-   </li>
-   <li>Team Lead: Aim for a team lead position to gain experience in project management and team collaboration.
-</li>
-</ol>
-
-<strong>Professional Development</strong>
-<ol>
-    <li>
-        Certifications: Obtain relevant certifications to validate your skills (e.g., AWS Certified Developer, Google Developer Expert).
-   </li>
-   <li>
-    Networking: Build a strong professional network through LinkedIn, GitHub, and other platforms.
-     Continuous Learning and Adaptation</li>
-</ol>
-Feedback Loop: Continuously seek feedback on your work and strive for improvement.
-
-<br>
-Stay Updated: Regularly follow tech blogs, podcasts, and news to stay updated with the latest trends and advancements.
-<br>
-Balance: Maintain a healthy work-life balance to avoid burnout and ensure sustainable growth.
-
-</p>
-    </section>
-    
-    <section id="links">
-      <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
-      <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
-      <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
-    </section>
-  </div>
-
-  <script src="./script.js" ></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
-
-
-
